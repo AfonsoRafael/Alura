@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- charset define o conjunto de caracteres -->
+    <meta charset="UTF-8">
+
+    <!-- viewport ajuda na responsividade -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- título da página (aparece na aba do navegador) -->
+    <title>Tags de Texto com Atributos</title>
+</head>
+
+<body>
+
+    <!-- ================= TÍTULOS ================= -->
+    <!-- id: identifica o elemento (usado em CSS/JS) -->
+    <!-- class: agrupa elementos -->
+    <h1 id="titulo-principal" class="titulo">Título nível 1</h1>
+
+    <!-- style: aplica CSS direto (não recomendado em produção, mas útil para estudo) -->
+    <h2 style="color: blue;">Título nível 2 com cor</h2>
+
+    <!-- title: mostra uma dica ao passar o mouse -->
+    <h3 title="Isso é uma dica">Título com atributo title</h3>
+
+    <hr>
+
+    <!-- ================= PARÁGRAFO ================= -->
+    <!-- align (antigo/obsoleto, mas pode cair em prova) -->
+    <p align="center">Parágrafo centralizado</p>
+
+    <!-- style com múltiplas propriedades -->
+    <p style="color: green; font-size: 18px;">
+        Parágrafo com cor e tamanho
+    </p>
+
+    <!-- ================= NEGRITO / IMPORTÂNCIA ================= -->
+    <p>
+        <strong class="destaque">Texto importante (SEO)</strong>
+    </p>
+
+    <p>
+        <b style="color:red;">Texto apenas visual</b>
+    </p>
+
+    <!-- ================= ITÁLICO ================= -->
+    <p>
+        <em title="Ênfase semântica">Texto com ênfase</em>
+    </p>
+
+    <p>
+        <i style="font-style: italic;">Texto itálico visual</i>
+    </p>
+
+    <!-- ================= OUTRAS TAGS ================= -->
+    <p><u style="text-decoration: underline;">Sublinhado</u></p>
+
+    <p><small title="Texto menor">Texto pequeno</small></p>
+
+    <p><mark style="background-color: yellow;">Texto destacado</mark></p>
+
+    <p><del datetime="2025-01-01">Texto removido</del></p>
+
+    <p><ins cite="https://exemplo.com">Texto inserido</ins></p>
+
+    <!-- ================= SUB / SUP ================= -->
+    <p>2<sup title="potência">3</sup> = 8</p>
+    <p>H<sub title="índice">2</sub>O</p>
+
+    <hr>
+
+    <!-- ================= LISTAS ================= -->
+    <!-- type define o tipo de marcador -->
+    <ul type="square">
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+
+    <!-- start define o número inicial -->
+    <ol type="A" start="3">
+        <li>Item A</li>
+        <li>Item B</li>
+    </ol>
+
+    <hr>
+
+    <!-- ================= LINKS ================= -->
+    <!-- href: destino do link -->
+    <!-- target: onde abrir (_blank abre nova aba) -->
+    <!-- title: dica ao passar mouse -->
+    <a href="https://www.google.com" target="_blank" title="Ir para o Google">
+        Acessar Google
+    </a>
+
+    <hr>
+
+    <!-- ================= CITAÇÕES ================= -->
+    <blockquote cite="https://exemplo.com">
+        Citação longa com fonte
+    </blockquote>
+
+    <p>
+        Ele disse: <q cite="https://exemplo.com">Citação curta</q>
+    </p>
+
+    <hr>
+
+    <!-- ================= QUEBRA DE LINHA ================= -->
+    <p>
+        Linha 1 <br>
+        Linha 2 <br>
+        Linha 3
+    </p>
+
+</body>
+
+</html>
