@@ -1,12 +1,117 @@
-h1{
-    font-size: 40px; 
-    color: green; 
-    font-family: Arial, Helvetica, sans-serif; 
-    letter-spacing: 5px;
+/* Definicao de fonte */
+
+@font-face {
+    font-family: "Unbounded";
+    src: url("../fonts/Unbounded-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
 }
+
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/Poppins-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Estilo desktop */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header img{
+    display: block;
+    margin: 75px 0px 0px 75px;
+}
+
+body{
+    background-color: #0E1014;
+}
+h1,p,a{
+    color: #fff;
+}
+
+h1{
+    font-size: 64px;
+   /* font-size: 70px; */
+    
+     /*  baixando da web */
+    
+    font-family: "Unbounded", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 60px;
+}
+
 p{
-    font-size: 25px; 
-    font-family: 'Courier New', Courier, monospace; 
-    color: gray; 
-    line-height: 50px;
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    text-align: center;
+    width: 792px;
+    margin: 24px auto 0;
+}
+
+h1 span{
+    color: #9747ff;
+}
+a{
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+    background-color: #9747ff;
+    width: 340px;
+    height: 66px;
+    display: block;
+    text-align: center;
+    line-height: 66px;
+    border-radius: 36px;
+    margin: 40px auto 40px;
+}
+
+a:hover{
+    background-color: #8233e8;
+}
+
+section img{
+    display: block;
+    width: 792px;
+    height: 446px;
+    margin: 0 auto;
+}
+
+@media(max-width: 768px){
+    header img{
+        margin: 65px 0 0 60px;
+    }
+    p{
+        width: 648px;
+    }
+
+}
+
+@media(max-width: 375px){
+    header img{
+        margin: 32px 0 0 16px;
+    }
+    h1{
+        font-size: 40px;
+    }
+    p{
+        font-size: 20px;
+        width:340px;
+    }
+    a{
+        font-size: 20px;
+        width: 251px;
+    }
+    section img{    
+        width: 340px;
+        height: 230px;
+    }
+
 }
